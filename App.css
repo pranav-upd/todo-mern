@@ -1,0 +1,23 @@
+.div_wrapper {
+  display: inline-flex;
+}
+
+li {
+ margin-left: 12%;
+ font-family: "Comic Sans MS";
+}
+
+.iptext{
+ text-align: center; 
+ border-radius: 12px; 
+ font-family: 'Comic Sans MS'; 
+ width: 300px; 
+ margin-left: 12%;
+ margin-top: 12%;
+}
+
+.img_ip{
+ margin-top: 13%;
+ margin-left: 1%;
+}
+

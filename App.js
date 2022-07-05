@@ -38,18 +38,19 @@ function App() {
   return (
   <div>
    <div className="div_wrapper">
-   <input type="text" className="iptext" ref={myref}/>
-   <img alt="" src="https://cdn.pixabay.com/photo/2017/01/10/23/01/icon-1970474_1280.png" width="16" height="16" className="img_ip" onClick={()=>add_data()}/>
+   <input alt="iptext" type="text" className="iptext" ref={myref}/>
+   <img alt="img1" src="https://cdn.pixabay.com/photo/2017/01/10/23/01/icon-1970474_1280.png" width="16" height="16" className="img_ip" onClick={()=>add_data()}/>
    </div>
-   <ul id="obj_list">
+   <div>
+   <ul>
      {Object.entries(data_output).map(([key, value]) => {
-       return ( <li key={key}>{key}. {value[0]}<input type="checkbox" defaultChecked={value[1]} onClick={()=>bool(key)}/>
-                <img alt="" src="https://freesvg.org/img/milker_X_icon.png" height="16" width="16" onClick={()=>del(key)}/></li>
+       return ( <li data-testid="listitem">{key}. {value[0]}<input data-testid="checkbox_ip" type="checkbox" defaultChecked={value[1]} onClick={()=>bool(key)}/><img data-testid="img2" src="https://freesvg.org/img/milker_X_icon.png" height="16" width="16" onClick={()=>del(key)}/></li>
                 )     
      })
-    }  
+    }
    </ul>
-  </div> 
+  </div>
+ </div>  
  ); 
 }  
 

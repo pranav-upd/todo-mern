@@ -1,0 +1,25 @@
+body {
+  background-color: #24c991;
+}
+
+.flexbox-container{
+ display: flex;
+ border-radius: 12px;
+ margin-top: 7.25%;
+ margin-left: 35%;
+ height: 25em;
+ width: 22.5em;
+ background-color: #fefefe;
+ flex-direction: column;
+ overflow: auto;
+}
+
+h1{
+ font-family: "Comic Sans MS";
+ text-align: center;
+ color: #101010;
+}
+
+
+
+
