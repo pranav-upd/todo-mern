@@ -44,11 +44,12 @@ function App() {
    <div>
    <ul>
      {Object.entries(data_output).map(([key, value]) => {
-       return ( <li data-testid="listitem">{key}. {value[0]}<input data-testid="checkbox_ip" type="checkbox" defaultChecked={value[1]} onClick={()=>bool(key)}/><img data-testid="img2" src="https://freesvg.org/img/milker_X_icon.png" height="16" width="16" onClick={()=>del(key)}/></li>
+       return ( <li key={key}>{key}. {value[0]}<input type="checkbox" defaultChecked={value[1]} onClick={()=>bool(key)}/>
+                <img alt="img2" src="https://freesvg.org/img/milker_X_icon.png" height="16" width="16" onClick={()=>del(key)}/></li>
                 )     
      })
     }
-   </ul>
+    </ul>
   </div>
  </div>  
  ); 
